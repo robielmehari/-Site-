@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ቤት ንባብ ሮቤል Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+  font-family: sans-serif;
+  background-color:#171615fa;
+  color: #333;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+ text-align: center;
+ background-image: url("St79.png");
+  background-size: cover;
+  background-position: center center;
+      display: flex;
+      align-items: center;
+      height: ;
+    }
+
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  fill: #333;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.question-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  margin-right: 10px;
+}
+
+.question-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.question-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.action-button {
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.action-button:hover {
+  color: #007bff;
+}
+
+.related-questions {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.related-text {
+  margin-right: 5px;
+}
+
+.dropdown-arrow {
+  width: 16px;
+  height: 16px;
+  fill: #888;
+  cursor: pointer;
+}
+
+.answer-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.answer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.user-follow {
+  font-size: 12px;
+  color: #888;
+}
+
+.answer-meta {
+  display: flex;
+  align-items: center;
+}
+
+.answer-date {
+  font-size: 12px;
+  color: #888;
+  margin-right: 15px;
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+  fill: #888;
+  cursor: pointer;
+}
+
+.answer-body {
+  margin-bottom: 10px;
+  color: #020d2d;
+}
+
+.answer-body h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.answer-body ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  color: #888;
+}
+
+.answer-body li {
+  margin-bottom: 5px;
+}
+
+.continue-reading {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.answer-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: #2e1803fa;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.content {
+      background-color:;
+      padding: 1.5px;
+      text-align: center;
+      background-image: url("Lb13.gif");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+     .Robi {
+      color: #999;
+      font-family: sans-serif;
+      font-size: 0.8rem;
+    }
+    a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+#search-btn1 {
+    width: 30%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color:#161913 ;
+    color:#37232e;
+}
+
+
+  
+  .menu-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a:hover {
+  color: #4CAF50;
+}
+
+.menu-button:hover {
+  background-color: #4CAF50;
+}
+
+.menu-button:hover + .menu {
+  display: block;
+}
+
+</style>
+
+<body>
+  <header>
+    <h1>📖</h1>
+    <div class="header-actions">
+      <button></button>
+      <svg class="search-icon" viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7 14 5 12 5 9.5S7 5 9.5 5 14 7 14 9.5 12 14 9.5 14z"></path>
+      </svg>
+      <input type="checkbox" >
+    </div>
+  </header>
+
+  <main>
+  
+    <div class="content">
+     <h1> <em> ቤት ንባብ 📓🖊</em></h1>
+    </div>
+    
+    <div class="answer-section">
+      <div class="answer-header">
+        <div class="user-profile">
+          <img src="St11.jpg" alt="User Profile Image">
+          <div class="user-info">
+            <span class="user-name"> 🪧 ሂወትና</span>
+            <span class="user-follow">Follow</span>
+          </div>
+        </div>
+        <div class="answer-meta">
+          <span class="answer-date">Mar 15</span>
+          <svg class="close-icon" viewBox="0 0 24 24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="answer-body">
+        <p>
+📜ኩሉ ግዜ ኣብ ውሽጥና ዘሎ በጀካ ሐደ ፈጣሪ ዝፈልጦ የለን ። <br>🖊 ስቅ ኢልና ንርበሽ ዓቅልና ነጵብብ ናይ ጽባሕ ዘይንፈልጥ ፣
+ንሕንና ደቂሰባት እወ ሐይልና  ኣብዘይ ከውን ነድክም ብዘሓት ኢና። <br>📃እዚ ድማ ብርቱዕ ሓሳብ ንጭነቅ ንትክዝ ንባሳጮ ኣብዘይ ተደለየ ንኣቱ።  ሕስብ እሞ ነብሎ ነብስና ከምንጎድእ ኣይርዳኣናን ዩ ፣ ክሳብ ንሓምም
+ጽባሕ ጽባሕ ካብዚታት ግልል ኢልና  ኣክንዲ
+ሓቦን ሞራልን ሰኒቅና ንቅድሚት ንምርሽ 
+ባዕልና ሃውታትያን ንኾውን። <br>📜 ጎቦ ዶ ይቐልል
+ጎልጎል ኩላህና ጎልጎል ንብል ማለት ዓቐበት
+ዘይብሉ ሂወት ድማ የለን ነዚታት ክንፈልጥ ይግባእ።  ሂወት ሐርጎጽጎጽ ውረድ ደይብ
+ዓቐብ ቁልቁለት ዝመልኣ ድኣምበር ኩሉ ነገር
+ጺዒርና እንረኽቦ እናሓደረዩ ዘሕጉሰና።<br>📃
+ጥራይ ትዕግስትን ሞራልን  "ዩ " ዘድሊ።
+<br>📜
+ንነብስና  ብዙሕ ኩርካሓት ከምዘሎ ነእምና
+መታን ኣብካልእ ካይህውትት ግዜና ብጉቡእ
+ተጠቂምና  ነዛ ንውንና ሂወት  ጉቡኣ ከነማልእ ህርድግ እካ  እንተበልና  ድሕሪ ጸበባ ራህዋ ከምዘሎ  ድሕሪ  ስቃይ ሩፍታ
+ድሕሪ ድኽነት ሃብቲ  ድሕሪ ሕማም ጥዕና
+እዚኣተን ሒዝና ኢና ንሂወትና ብጉቡእ ክንማሰላ ንኽእል። <br>📃  ካብዚ ወጻኢ  በጀካ ሑዱር ሕማም ካልእ ክመጽእ ኣይክእልን።
+ስቅ አይንረበሽ  ሓሲብና ንምልኦ ምስ ጊዚኡ ከኸውን ኣለዎ፣ ስቅ ኢልና  ንዓመታት ፕላን
+ነውጽእ  ብኡኡ ንጭነቅ እዚ እቲ ዝዓበየ
+ሽግርና "ዩ"  እንታይ የጋጥመና ዘይንፈልጥ።
+<br>📜ኣሽንካይ ዶ ናይ ዓመት ክንሓስብ ብሰከንድ
+ከማን እንታይ ከምዝመጻና ወላሓደ ኣፍልጦ
+የብልናን።     ስለዚ  እንገብሮ ኹሉ ብሑሉፍና
+ንማሃር  ንዝመጽእ 
+
+ንኹሉ ግዜለዎ
+<br>
+<h3>📜* ስለዚ  እንገብሮ ኹሉ ብሑሉፍና፣  </h3>
+         <ul>
+          <li>
+             <strong>ንዝመጽእ  ፡</strong> ድማ  ብልሓትና ንገምግም ይብል ። ሰላምን ራህዋን ይንገሳልና  ፍቅርና ይሰስን  ቻው።
+!!!!!!!!!!!!!!!!!!!!!!!!!!  
+<br>
+ 📝ጻሐፊ<br>
+ንኹሉ ግዜ ለዎ።
+<a href="index.html" class="read-more">📝Read more...</a>
+             </p>
+          </li>
+        </ul>
+      </div>
+      
+      
+      
+      <div class="answer-actions">
+        <button class="action-button" data-action="upvote">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+          </svg>
+          Upvote
+        </button>
+        <button class="action-button" data-action="downvote">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 17.27l-4.59-4.58L6 14l6 6 6-6-1.41-1.41L12 17.27z"></path>
+          </svg>
+          Downvote
+        </button>
+        <button class="action-button" data-action="comment">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12.5V7h1.5v5.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V7h1.5v5.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V7h1.5v6.5c0 2.21-1.79 4-4 4s-4-1.79-4-4z"></path>
+          </svg>
+        </button>
+        <button class="action-button" data-action="share">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54-.32.8-.92.8-1.58 0-.68-.25-1.28-.77-1.91L12.95 2.22c-.14-.09-.31-.14-.5-.14s-.36.05-.5.14L5.04 7.27c-.52.32-.77.91-.77 1.58 0 .68.25 1.28.77 1.91l7.05 4.11c.05.23.09.46.09.7s-.04.47-.09.7l-7.05 4.11c-.52.32-.77.91-.77 1.58 0 .68.25 1.28.77 1.91L16.04 17.81c.52.32.77.91.77 1.58 0 .68-.25 1.28-.77 1.91z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </main>
+  
+  
+   <div class="question-actions">
+        <button class="action-button" data-action="answer">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M14.06 9.02L9.02 14.06l5.04 5.04-1.41 1.41L7.07 10.93 2.03 5.89 3.44 4.48l5.04 5.04z"></path>
+          </svg>
+          Answer
+        </button>
+        <button class="action-button" data-action="follow">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M18 17v-2c0-2.11-1.69-4-4-4H7c-2.31 0-4 1.89-4 4v2c0 .55.45 1 1 1h10c.55 0 1-.45 1-1zm-4-8c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2z"></path>
+          </svg>
+          Follow
+        </button>
+        <button class="action-button" data-action="request">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4h-4v-2h4v-4h2v4h4v2z"></path>
+          </svg>
+          Request
+        </button>
+        <button class="action-button" data-action="details">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2v-2h2v2z"></path>
+          </svg>
+          Details
+        </button>
+        <button class="action-button" data-action="more">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+          </svg>
+          More
+        </button>
+      </div>
+      <div class="related-questions">
+        <span class="related-text">All related (89)</span>
+        <svg class="dropdown-arrow" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+        </svg>
+      </div>
+    </div>
+    
+     
+  <footer>
+     <nav>
+       <a href="Index.html"><button id="search-btn1"> 📚Home</button> </a>
+       <a href="about.html"><button id="search-btn1"> 📚About us </button> </a>
+    </nav>
+    <div class="Robi"> <img src="Lb12.gif"width="100%" height="50px">
+<em> &copy; 2024 The library of robel  </em> 
+    </div>
+  </footer>
+
+ <div class="menu-button">☰</div>
+<div class="menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="acc.html">Contact</a>
+</div>
+
+<script>
+  // Mobile Menu Logic
+  const menuButton = document.querySelector('.menu-button');
+  const menu = document.querySelector('.menu');
+
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+ 
+  <script>
+  const actionButtons = document.querySelectorAll('.action-button');
+
+actionButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const action = button.dataset.action;
+
+    switch (action) {
+      case 'answer':
+        // Handle Answer action (e.g., display a form)
+        alert('Answer action clicked!'); 
+        break;
+      case 'follow':
+        // Handle Follow action (e.g., update user state)
+        alert('Follow action clicked!'); 
+        break;
+      case 'request':
+        // Handle Request action (e.g., display a request form)
+        alert('Request action clicked!'); 
+        break;
+      case 'details':
+        // Handle Details action (e.g., show more information)
+        alert('Details action clicked!'); 
+        break;
+      case 'more':
+        // Handle More action (e.g., show additional options)
+        alert('More action clicked!'); 
+        break;
+      case 'upvote':
+        // Handle Upvote action (e.g., update vote count)
+        alert('Upvote action clicked!'); 
+        break;
+      case 'downvote':
+        // Handle Downvote action (e.g., update vote count)
+        alert('Downvote action clicked!'); 
+        break;
+      case 'comment':
+        // Handle Comment action (e.g., display a comment form)
+        alert('Comment action clicked!'); 
+        break;
+      case 'share':
+        // Handle Share action (e.g., display share options)
+        alert('Share action clicked!'); 
+        break;
+    }
+  });
+});
+
+const continueReadingButton = document.querySelector('.continue-reading');
+
+continueReadingButton.addEventListener('click', () => {
+  // Handle Continue Reading action (e.g., expand the answer)
+  alert('Continue Reading clicked!'); 
+  // You could use JavaScript to show hidden content here.
+});
+</script>
+</body>
+</html>

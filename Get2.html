@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Robi Styles 😉</title>
+<style>
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.card {
+  width: 150px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-container svg {
+  width: 50px;
+  height: 50px;
+}
+
+.new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+}
+
+/* Style for different icon styles */
+.solid .icon-container svg {
+  fill: #333;
+}
+
+.regular .icon-container svg {
+  fill: #555;
+}
+
+.light .icon-container svg {
+  fill: #888;
+}
+
+.thin .icon-container svg {
+  stroke: #333;
+  stroke-width: 2;
+  fill: none;
+}
+
+.duotone .icon-container svg {
+  fill: #666;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+</style>
+</head>
+<body>
+
+  <div class="card solid">
+    <div class="new">NEW</div>
+    <h3>In progress 🔜</h3>
+    <p>Great for small sizes and bringing contrast to text.</p>
+    <div class="icon-container">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2v-2h2v2z" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="card regular">
+    <div class="new">NEW</div>
+    <h3>In progress 🔜</h3>
+    <p>Easy, readable icons that blend in with regular text.</p>
+    <div class="icon-container">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2v-2h2v2z" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="card light">
+    <div class="new">NEW</div>
+    <h3>In progress 🔜</h3>
+    <p>When a lighter touch is needed.</p>
+    <div class="icon-container">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2v-2h2v2z" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="card thin">
+    <div class="new">NEW</div>
+    <h3>In progress 🔜</h3>
+    <p>Fits in with the lastest super-light designs.</p>
+    <div class="icon-container">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2v-2h2v2z" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="card duotone">
+    <div class="new">NEW</div>
+    <h3>In progress 🔜</h3>
+    <p>Great for an illustrated feel & grabbing attention.</p>
+    <div class="icon-container">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2v-2h2v2z" />
+      </svg>
+    </div>
+  </div>
+
+  </body>
+</html>
